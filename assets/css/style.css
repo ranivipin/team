@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.container1 {
+    max-width: 1480px;
+}
+
+.number {
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 8px 11px;
+
+}
+
+.btn1 {
+    border: 2px solid black;
+    padding: 8px 16px;
+    background-color: #FFD600;
+}
+
+.color {
+    color: yellow;
+}
+
+.number:hover {
+    border: 2px solid red;
+    color: red;
+}
+
+.ff-Noto {
+    font-family: 'Noto Serif';
+}
+
+.ff-ModernoFBComp {
+    font-family: 'ModernoFBComp', ;
+}
+
+.mw-1060 {
+    max-width: 1060;
+}
+
+.mw-750 {
+    max-width: 750px;
+}
+
+/* .ml-90{
+    margin-left: 90px;
+} */
+.border1 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+.border-right {
+    border-right: 2px solid black;
+    height: 100%;
+
+}
+.bg-image{
+    background-image: url(../image/25th\ Feb.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:992px) {
+    ul.same {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width:992px) {
+    label[for="menubtn"] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        position: relative;
+        z-index: 4;
+        cursor: pointer;
+        flex-direction: column;
+
+    }
+
+    label[for="menubtn"]>span {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(205, 182, 51);
+        border-radius: 3px;
+
+    }
+
+    button.mobile-view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-color: goldenrod;
+        transition: all 300ms linear;
+    }
+
+
+    input[type="checkbox"][id=menubtn]:checked+button.mobile-view {
+        left: 0;
+    }
+
+}
