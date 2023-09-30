@@ -35,7 +35,7 @@
 }
 
 .ff-Noto {
-    font-family: 'Noto Serif',sans-serif;
+    font-family: 'Noto Serif', sans-serif;
 }
 
 .ff-ModernoFBComp {
@@ -255,7 +255,8 @@
 ul {
     margin-top: 0 !important;
 }
-.accordion-item{
+
+.accordion-item {
     border-bottom: 2px solid #000000 !important;
 }
 
@@ -464,7 +465,8 @@ ol li {
     .right::after {
         left: 0;
     }
-    .timeline::after{
+
+    .timeline::after {
         top: 65px;
     }
 }
